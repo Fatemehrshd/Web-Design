@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fatemeh Rashidi">
+    <meta name="keywords" content="movie, cinema, serial, series, ...">
+    <meta name="description" content="movies-connecting to database">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <title>IMDb</title>
+</head>
+<body>
+   <main>
+        <div class="container">
+            <form action="">
+                <label for="" class="form-label"></label>
+                <select name="" id="movies" class="form-select" onchange="display_info(this)">
+                <option selected>Select Your Favorite Movie Here...</option>
+                </select>
+            </form>
+                <div id="all_data" class="card" style="visibility: hidden;">
+                    <div class="left-col">
+                        <img id="image_url" class="img-fluid">
+                    </div>
+                    <div class="right-col card-body">
+                        
+                         
+                        <div id="title" class="card-title"></div>
+                        <div id="year" class="card-text"></div>
+                        
+                        <div id="genres">
+
+
+                        </div>
+                        
+                        <div id="rating-box" class="card-text">
+                            <a href="https://www.imdb.com/"><img class="img-fluid" id="logo" src="IMDb_logo/IMDB_Logo_2016.svg" alt=""></a>
+                            <span id="rating"><span id="rate-no" class="bold"></span><span id="ten" style="color: gray;">/10</span></span>
+                        </div>
+                        <div class="card-text">Rank: <span id="rank" class="bold"></span></div>
+                        <div class="card-text" id="running_time_secs"></div>
+                        
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div id="plot"></div>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#" id="director-box"><span class="bold">Directed By</span><span id="directors"></span></a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#" id="actors-box"><span class="bold">Stars</span><span id="actors"></span></a>
+                            </li>
+                            <li class="list-group-item">
+                                <div id="release_date"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+   </main>
+</body>
+</html>
